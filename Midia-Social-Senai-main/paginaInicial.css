@@ -1,0 +1,219 @@
+* {
+    box-sizing: border-box;
+}
+ 
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(212, 212, 212);
+    margin: 0;
+}
+ 
+/* menu de cima*/
+header {
+    background-color: #005fa7;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-bottom: 1px solid #004f8b;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.8rem 2rem;
+    z-index: 10;
+}
+ 
+.logo img {
+    height: 2.5rem;
+}
+ 
+.botoesIniciais {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    text-decoration: none;
+}
+ 
+.botoesIniciais button { 
+    background: transparent; 
+    border: none; 
+    cursor: pointer; 
+    color: white; 
+    font-size: 1rem;
+    font-weight: bold; 
+}
+ 
+#botao-paginicial {
+    background-color: white;
+    color: #005fa7;
+    border: none;
+    border-radius: 50px;
+    padding: 0.5rem 1.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+ 
+.profilepicture1 {
+    border-radius: 50%;
+    height: 3rem;
+    width: 3rem;
+    background-color: #d4d4d4;
+    border: none;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+ 
+.conteudoPrincipal {
+    margin-top: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem;
+    padding: 1rem;
+}
+ 
+/* aquele cantinho q tem o perfil */
+.quadradoperfil {
+    width: 20rem;
+    background-color: white;
+    border-radius: 15px;
+    border: 1px solid #a8a8a8;
+    padding: 1.5rem;
+    position: sticky;
+    top: 6rem;
+}
+ 
+.nomesperfil {
+    margin-bottom: 1rem;
+}
+ 
+.nomesperfil  button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding: 0;
+    display: block;
+    text-decoration: none
+}
+ 
+.usuarionomeperfil  button {
+    font-size: 1rem;
+    color: gray;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+ 
+h4 {
+    color: gray;
+    font-size: 1.1rem;
+    margin: 1rem 0 0.5rem;
+}
+ 
+h5 {
+    color: rgb(0, 0, 0);
+    font-size: 1.1rem;
+    font-weight: normal;
+    margin: 0 0 1rem;
+}
+ 
+h6 {
+    color: rgb(0, 0, 0);
+    font-size: 1rem;
+    font-weight: normal;
+    margin-top: 2rem;
+}
+ 
+/* parte do feed q vai ter os post */
+.feed {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    width: 40rem;
+    max-width: 100%;
+}
+ 
+.postfeed {
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding: 1.2rem 1.5rem;
+    border: 1px solid #dcdcdc;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 1px solid #9e9e9e;
+}
+
+.perfilnomepost,
+.usuarionomepost {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    display: inline-block;
+    max-width: 100%;
+}
+ 
+.perfilnomepost {
+    font-weight: bold;
+    font-size: 1rem;
+    margin-right: 0.5rem;
+}
+ 
+.usuarionomepost {
+    color: gray;
+    font-size: 0.9rem;
+}
+ 
+.conteudoPost {
+    margin-top: 0.8rem;
+}
+ 
+.conteudoPost p {
+    word-wrap: break-word;
+    margin: 0 0 0.6rem;
+    line-height: 1.4;
+}
+ 
+.conteudoPost p:last-child {
+    margin-bottom: 0;
+}
+ 
+#botaoPesquisar {
+    border-radius: 50px;
+    width: 30rem;
+    height: 3rem;
+    padding: 1rem;
+    background-color: white;
+    border: 3px solid #9c9c9c;
+}
+
+@media (max-width: 768px) {
+    .conteudoPrincipal {
+        flex-direction: column;
+        align-items: center;
+    }
+ 
+    .quadradoperfil {
+        position: static;
+        width: 100%;
+        max-width: 30rem;
+    }
+ 
+    .feed {
+        width: 100%;
+    }
+ 
+    .botoesIniciais {
+        gap: 0.5rem;
+    }
+ 
+    .botoesIniciais > button {
+        font-size: 0.85rem;
+    }
+}
+ 
