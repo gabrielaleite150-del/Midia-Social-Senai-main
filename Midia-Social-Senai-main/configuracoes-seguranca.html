@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SENAI - Configurações</title>
+    <link rel="stylesheet" href="configuracoes-seguranca.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="insiraaqui" alt="Logo">
+        </div>
+
+        <div class="botoesIniciais">
+            <a href="paginaInicial.html"><button id="botao-paginicial">Página Inicial</button></a>
+            <button id="botao-Mensagens">Mensagem</button>
+            <button id="botao-publicacoes">Publicações</button>
+            <a href="paginaPerfil.html"><button id="botao-meuperfil">Meu Perfil</button></a>
+            <button id="botao-configuracoes">Configurações</button>
+            <button id="botao-publicar">Publicar</button>
+        </div>
+
+        <button class="profilepicture1"></button>
+    </header>
+
+    <div class="conteudoPrincipal">
+        <div class="quadradoPrincipal">
+
+            <!-- coluna q fica as opcoes -->
+            <aside class="menuConfig">
+                <h1><span class="icone">&#9881;</span> Configurações</h1>
+
+                <nav class="restoDoMenu">
+                    <button class="itemMenu" type="button">
+                        <span class="icone">&#128100;</span> Dados Pessoais
+                    </button>
+                    <button class="itemMenu ativo" type="button">
+                        <span class="icone">&#128274;</span> Segurança
+                    </button>
+                    <button class="itemMenu" type="button">
+                        <span class="icone">&#128100;</span> Aparência
+                    </button>
+                </nav>
+            </aside>
+
+            <!-- coluna q tem o que alterar  -->
+            <section class="conteudoConfig">
+
+                <div class="perfilInfo">
+                    <div class="fotoPerfil"></div>
+                    <div class="textoPerfil">
+                        <h2>Nome de Perfil</h2>
+                        <p>@nomedeusuario</p>
+                    </div>
+                </div>
+
+                <div class="campoSenha">
+                    <label for="novaSenha">Alterar Senha</label>
+                    <input type="password" id="novaSenha" name="novaSenha" maxlength="6">
+                    <span class="dica">*Obrigatório ter 6 dígitos</span>
+                </div>
+
+                <div class="botoesAcao">
+                    <button type="button" class="botaoCancelar">Cancelar</button>
+                    <button type="button" class="botaoSalvar">Salvar</button>
+                </div>
+
+            </section>
+
+        </div>
+    </div>
+</body>
+</html>
