@@ -22,13 +22,13 @@ header {
     padding: 0.8rem 2rem;
     z-index: 10;
 }
- 
+
 
 /* por imagem necessaria */
 .logo img {
     height: 2.5rem;
 }
- 
+
 .botoesIniciais {
     display: flex;
     align-items: center;
@@ -38,16 +38,16 @@ header {
     background-color: #153a84;
     border-radius: 60px;
 }
- 
-.botoesIniciais button { 
-    background: transparent; 
-    border: none; 
-    cursor: pointer; 
-    color: #ffe6b0; 
+
+.botoesIniciais button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    color: #ffe6b0;
     font-size: 1rem;
-    font-weight: bold; 
+    font-weight: bold;
 }
- 
+
 #botao-configuracoes {
     background-color: #489edd;
     color: #322b56;
@@ -58,7 +58,7 @@ header {
     font-weight: bold;
     cursor: pointer;
 }
- 
+
 .profilepicture1 {
     border-radius: 50%;
     height: 3rem;
@@ -81,7 +81,7 @@ header {
     height: 100%;
 }
 
-/* cartão principal: menu + conteúdo lado a lado, como no wireframe */
+/* cartão principal: menu + conteúdo lado a lado */
 .quadradoPrincipal {
     display: flex;
     align-items: stretch;
@@ -186,27 +186,69 @@ header {
     font-size: 0.95rem;
 }
 
-.campoSenha {
+/* foto de perfil */
+.campoFoto {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    margin-bottom: 2rem;
+    max-width: 25rem;
+}
+
+.campoFoto > label {
+    color: #ffe6b0;
+    font-weight: bold;
+}
+
+.linhaFoto {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+}
+
+.fotoPreview {
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    background-color: #d4d4d4;
+    flex-shrink: 0;
+}
+
+.botaoAlterarFoto {
+    background-color: #489edd;
+    color: #322b56;
+    border: none;
+    border-radius: 8px;
+    padding: 0.6rem 1.4rem;
+    font-size: 0.95rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* biografia */
+.campoBio {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
     max-width: 25rem;
 }
 
-.campoSenha label {
+.campoBio label {
     color: #ffe6b0;
     font-weight: bold;
 }
 
-.campoSenha input {
+.campoBio textarea {
     background-color: #f0f0f0;
     border: 1px solid #182f5a;
-    border-radius: 20px;
+    border-radius: 12px;
     padding: 0.7rem 1rem;
     font-size: 1rem;
+    font-family: inherit;
+    resize: vertical;
 }
 
-.campoSenha .dica {
+.campoBio .dica {
     color: #b9c4e0;
     font-size: 0.85rem;
 }

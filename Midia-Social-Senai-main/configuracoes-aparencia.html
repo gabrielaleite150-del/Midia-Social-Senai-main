@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SENAI - Configurações</title>
-    <link rel="stylesheet" href="configuracoes-seguranca.css">
+    <link rel="stylesheet" href="configuracoes-aparencia.css">
 </head>
 <body>
     <a>
@@ -36,16 +36,16 @@
                     <a href="configuracoes-dados.html"> <button class="itemMenu" type="button">
                         <span class="icone">&#128100;</span> Dados Pessoais
                     </button> </a>
-                    <button class="itemMenu ativo" type="button">
+                    <a href="configuracoes-seguranca.html"> <button class="itemMenu" type="button">
                         <span class="icone">&#128274;</span> Segurança
                     </button>
-                    <a href="configuracoes-aparencia.html"> <button class="itemMenu" type="button">
-                        <span class="icone">&#128100;</span> Aparência
-                    </button> </a>
+                    <button class="itemMenu ativo" type="button">
+                        <span class="icone">&#127912;</span> Aparência
+                    </button>
                 </nav>
             </aside>
 
-            <!-- coluna q tem o que alterar  -->
+            <!-- coluna q tem o que alterar -->
             <section class="conteudoConfig">
 
                 <div class="perfilInfo">
@@ -56,10 +56,19 @@
                     </div>
                 </div>
 
-                <div class="campoSenha">
-                    <label for="novaSenha">Alterar Senha</label>
-                    <input type="password" id="novaSenha" name="novaSenha" maxlength="6">
-                    <span class="dica">*Obrigatório ter 6 dígitos</span>
+                <div class="campoFoto">
+                    <label>Foto de Perfil</label>
+                    <div class="linhaFoto">
+                        <div class="fotoPreview"></div>
+                        <label for="uploadFoto" class="botaoAlterarFoto">Alterar Foto</label>
+                        <input type="file" id="uploadFoto" name="uploadFoto" accept="image/*" hidden>
+                    </div>
+                </div>
+
+                <div class="campoBio">
+                    <label for="biografia">Biografia</label>
+                    <textarea id="biografia" name="biografia" rows="4" maxlength="200" placeholder="Conte um pouco sobre você..."></textarea>
+                    <span class="dica">Máximo de 200 caracteres</span>
                 </div>
 
                 <div class="botoesAcao">

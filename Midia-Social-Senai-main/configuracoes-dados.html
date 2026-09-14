@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SENAI - Configurações</title>
-    <link rel="stylesheet" href="configuracoes-seguranca.css">
+    <link rel="stylesheet" href="configuracoes-dados.css">
 </head>
 <body>
-    <a>
     <header>
+        <a>
         <div class="logo">
             <img src="insiraaqui" alt="Logo">
         </div>
@@ -33,10 +33,10 @@
                 <h1><span class="icone">&#9881;</span> Configurações</h1>
 
                 <nav class="restoDoMenu">
-                    <a href="configuracoes-dados.html"> <button class="itemMenu" type="button">
-                        <span class="icone">&#128100;</span> Dados Pessoais
-                    </button> </a>
                     <button class="itemMenu ativo" type="button">
+                        <span class="icone">&#128100;</span> Dados Pessoais
+                    </button>
+                    <a href="configuracoes-seguranca.html"> <button class="itemMenu" type="button">
                         <span class="icone">&#128274;</span> Segurança
                     </button>
                     <a href="configuracoes-aparencia.html"> <button class="itemMenu" type="button">
@@ -45,7 +45,7 @@
                 </nav>
             </aside>
 
-            <!-- coluna q tem o que alterar  -->
+            <!-- coluna q tem o que alterar -->
             <section class="conteudoConfig">
 
                 <div class="perfilInfo">
@@ -56,10 +56,21 @@
                     </div>
                 </div>
 
-                <div class="campoSenha">
-                    <label for="novaSenha">Alterar Senha</label>
-                    <input type="password" id="novaSenha" name="novaSenha" maxlength="6">
-                    <span class="dica">*Obrigatório ter 6 dígitos</span>
+                <div class="camposDados">
+                    <div class="campoTexto">
+                        <label for="nomePerfil">Nome do Perfil</label>
+                        <input type="text" id="nomePerfil" name="nomePerfil" placeholder="Digite seu nome">
+                    </div>
+
+                    <div class="campoTexto">
+                        <label for="nomeUsuario">Nome de Usuário</label>
+                        <input type="text" id="nomeUsuario" name="nomeUsuario" placeholder="@nomedeusuario">
+                    </div>
+
+                    <div class="campoTexto">
+                        <label for="matricula">Matrícula</label>
+                        <input type="text" id="matricula" name="matricula" placeholder="Digite sua matrícula">
+                    </div>
                 </div>
 
                 <div class="botoesAcao">
