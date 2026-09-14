@@ -26,6 +26,12 @@ header {
 }
  
 
+.botoesIniciais .material-icons.pink600{
+    color: #ffe6b0;     
+    width: 5rem;
+    height: auto;
+}
+
 /* por imagem necessaria */
 .logo img {
     height: 2.5rem;
@@ -72,7 +78,7 @@ header {
 }
  
 .conteudoPrincipal {
-    margin-top: 6rem;
+    margin-top: 7rem;
     display: flex;
     justify-content: center;
     align-items: flex-start;
