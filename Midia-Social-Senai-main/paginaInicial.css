@@ -1,3 +1,5 @@
+
+
 * {
     box-sizing: border-box;
 }
@@ -245,4 +247,34 @@ h6 {
         font-size: 0.85rem;
     }
 }
- 
+
+#areaCurtida {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    margin-top: 1rem;
+}
+
+.botaoCurtir {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.botaoCurtir .material-icons {
+    transition: transform 0.15s ease;
+}
+
+.botaoCurtir:active .material-icons {
+    transform: scale(1.2);
+}
+
+.contadorLikes {
+    color: white;
+    margin: 0;
+    font-size: 0.9rem;
+}
+.material-icons.pink600 { color: #fc6ea9; }
